@@ -70,4 +70,32 @@ if (q5 === 'Y' || q5 === 'YES') {
   alert('You don\'t know me at all..');
 }
 
-alert('Score ' + counter + ' out of 5!');
+var q6 = prompt('What number am I thinking of between 1 and 10?');
+console.log(q6);
+
+if (q6 === '5') {
+  alert('Correct.');
+  counter++;
+  console.log('Correct answers: ' + counter);
+} else if (q6 === '4'|| q6 === '3' || q6 === '2' || q6 === '1') {
+  alert ('Too low.');
+} else if(q6 === '6' || q6 === '7' || q6 === '8' || q6 === '9' || q6 === '10') {
+  alert ('Too high.');
+} else {
+  alert ('Did you even read the question?');
+}
+
+var lang = ['Spanish' , 'English'] .toLowerCase();
+var q7 = prompt('I speak two languages, can you guess one of them?');
+console.log(q7);
+
+if (lang.includes(q7)) {
+  alert('That is one of them.');
+  counter++;
+  console.log('Correct answers: ' + counter);
+} else {
+  alert('No');
+}
+
+
+alert('Score ' + counter + ' out of 7!');

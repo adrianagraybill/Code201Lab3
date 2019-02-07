@@ -22,7 +22,7 @@ var questions = [
   'Do I prefer Iron Man to Captain America? Y or N',
   'Am I a dog person? Y or N',
   'What number am I thinking of? Clue: Between 1 and 10',
-  'I speak two languages, can you guess one of them?'
+  'Out of the top 5 languages commonly spoken in the US, which 2 do I speak?'
 ];
 
 var possibleAnswers = [
@@ -35,7 +35,16 @@ var possibleAnswers = [
   ['Spanish', 'spanish', 'SPANISH',
     'English', 'english', 'ENGLISH',
     'French', 'french', 'FRENCH',
-    'Italian', 'italian', 'ITALIAN',]
+    'Italian', 'italian', 'ITALIAN',
+    'Mandarin', 'mandarin', 'MANDARIN',
+    'Cantonese', 'cantonese', 'CANTONESE',
+    'Tagalog', 'tagalog', 'TAGALOG',
+    'Vietnamese', 'vietnamese', 'VIETNAMESE',
+    'Arabic', 'arabic', 'ARABIC',
+    'Korean', 'korean', 'KOREAN',
+  ]
+  //Chinese is not technically a language but a lot of people assume it is.
+
 ];
 
 var correctAnswers = [
